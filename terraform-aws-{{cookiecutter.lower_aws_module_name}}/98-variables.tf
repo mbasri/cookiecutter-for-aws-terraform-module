@@ -1,4 +1,4 @@
-variable "{{ cookiecutter.underscore_aws_module_name + '_name' }} {
+variable "{{ cookiecutter.underscore_aws_module_name + '_name' }}" {
   description = "{{ 'Name that will be assigned to the ' + cookiecutter.title_aws_module_name }}"
   type        = string
 }
