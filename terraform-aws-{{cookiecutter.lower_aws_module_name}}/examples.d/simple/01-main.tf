@@ -13,12 +13,13 @@ locals {
 module "{{cookiecutter.lower_aws_module_name}}" {
   source = "../../"
 
-  {{cookiecutter.underscore_aws_module_name}}_name    = {{ 'my-' + cookiecutter.lower_aws_module_name + '-name' }}
-  description = {{ 'Testing ' + cookiecutter.title_aws_module_name + ' module' }}
+  {{cookiecutter.underscore_aws_module_name}}_name = "{{ 'my-' + cookiecutter.lower_aws_module_name + '-name' }}"
+
+  description = "{{ 'Testing ' + cookiecutter.title_aws_module_name + ' module' }}"
 
   tags = {
-    "Name"        = {{ 'my-' + cookiecutter.lower_aws_module_name + '-name' }}
-    "Description" = {{ 'Testing ' + cookiecutter.title_aws_module_name + ' module' }}
+    "Name"        = "{{ 'my-' + cookiecutter.lower_aws_module_name + '-name' }}"
+    "Description" = "{{ 'Testing ' + cookiecutter.title_aws_module_name + ' module' }}"
 
     "billing:organisation"      = "example"
     "billing:organisation-unit" = "labs"
