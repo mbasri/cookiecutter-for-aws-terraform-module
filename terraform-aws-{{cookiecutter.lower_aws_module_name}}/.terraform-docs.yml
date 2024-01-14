@@ -19,6 +19,7 @@ output:
   file: "README.md"
   mode: inject
   template: |-
+    <!-- BEGIN_TF_DOCS -->
     # AWS {{ cookiecutter.title_aws_module_name }} Terraform module
 
     [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -70,6 +71,7 @@ output:
     ## License
 
     This is free and unencumbered software released into the public domain - see the [LICENSE](./LICENSE) file for details
+    <!-- END_TF_DOCS -->
 
 output-values:
   enabled: false
