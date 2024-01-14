@@ -1,0 +1,8 @@
+{
+  "aws_module_name": "aws-module-name",
+  "lower_aws_module_name": "{{ cookiecutter.aws_module_name.replace('_','-').replace(' ','-').lower() }}",
+  "title_aws_module_name": "{{ cookiecutter.aws_module_name.replace('-',' ').replace('_',' ').title() }}",
+  "underscore_aws_module_name": "{{ cookiecutter.aws_module_name.replace('-','_').replace(' ','_').lower() }}",
+  "_terraform_version": "1.6.6",
+  "_aws_provider_version": "5.31.0"
+}

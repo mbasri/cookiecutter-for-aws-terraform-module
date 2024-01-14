@@ -1,0 +1,95 @@
+formatter: "markdown"
+
+version: ""
+
+header-from: main.tf
+footer-from: ""
+
+recursive:
+  enabled: false
+  path: modules
+
+sections:
+  hide: []
+  show: []
+
+content: ""
+
+output:
+  file: "README.md"
+  mode: inject
+  template: |-
+    # AWS {{ cookiecutter.title_aws_module_name }} Terraform module
+
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+    Terraform module which create {{cookiecutter.title_aws_module_name}} resources on AWS.
+
+    ## Examples
+
+    ### Simple
+    ```hcl
+    module "{{cookiecutter.lower_aws_module_name}}" {
+      source = {{ 'git::https://gitlab.com/mbasri-terraform/modules/aws/terraform-aws-' + cookiecutter.lower_aws_module_name + '?ref=v1.0.0' }}
+
+      {{cookiecutter.underscore_aws_module_name}}_name = {{ 'my-' + cookiecutter.lower_aws_module_name + '-name' }}
+
+      description = {{ 'Testing ' + cookiecutter.title_aws_module_name +' module' }}
+
+      tags = {
+        "Name"        = {{ 'my-' + cookiecutter.lower_aws_module_name + '-name' }}
+        "Description" = {{ 'Testing ' + cookiecutter.title_aws_module_name +' module' }}
+
+        "billing:Organisation"     = "example"
+        "billing:OrganisationUnit" = "labs"
+        "billing:Application"      = "test"
+        "billing:Environment"      = "dev"
+        
+        "security:Compliance"      = "HIPAA"
+        "security:DataSensitity"   = "1"
+        "security:Encryption"      = "false"
+      }
+    }
+    ```
+
+    ## Others
+
+    More examples are available on this GIT repository in the folder [`examples.d`](https://gitlab.com/mbasri-terraform/modules/aws/terraform-aws-{{cookiecutter.lower_aws_module_name}}/-/tree/master/examples.d)
+
+    ## Generate docs
+    
+    ```shell
+    terraform-docs -c .terraform-docs.yml .
+    ```
+    {{'{{ .Content }}'}}
+    
+    ## Author
+
+    * [**Mohamed BASRI**](https://gitlab.com/mbasri)
+
+    ## License
+
+    This is free and unencumbered software released into the public domain - see the [LICENSE](./LICENSE) file for details
+
+output-values:
+  enabled: false
+  from: ""
+
+sort:
+  enabled: true
+  by: name
+
+settings:
+  anchor: true
+  color: true
+  default: true
+  description: false
+  escape: true
+  hide-empty: false
+  html: true
+  indent: 2
+  lockfile: true
+  read-comments: true
+  required: true
+  sensitive: true
+  type: true
