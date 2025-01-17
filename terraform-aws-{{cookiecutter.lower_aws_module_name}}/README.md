@@ -76,7 +76,7 @@ No modules.
 
 ## Author
 
-* [**Mohamed BASRI**](https://gitlab.com/mbasri)
+* [**Mohamed BASRI**](https://github.com/mbasri)
 
 ## License
 

@@ -12,7 +12,7 @@ Cookiecutter template to manage consistent creation of Terraform modules
 
 ### Local execution
 ```shell
-git clone https://gitlab.com/mbasri/cookiecutter-for-aws-terraform-module.git
+git clone https://github.com/mbasri/cookiecutter-for-aws-terraform-module.git
 cd cookiecutter-for-aws-terraform-module
 cookiecutter .
 # You will be prompted for basic info (aws_module_name) which will be used in the template.
@@ -28,7 +28,7 @@ cookiecutter gl:mbasri/cookiecutter-for-aws-terraform-module
 
 ## Author
 
-* [**Mohamed BASRI**](https://gitlab.com/mbasri)
+* [**Mohamed BASRI**](https://github.com/mbasri)
 
 ## License
 
