@@ -12,7 +12,7 @@ Terraform module which create {{cookiecutter.title_aws_module_name}} resources o
 module "{{cookiecutter.lower_aws_module_name}}" {
   source = "{{ 'git::https://gitlab.com/mbasri-terraform/modules/aws/terraform-aws-' + cookiecutter.lower_aws_module_name + '?ref=v1.0.0' }}"
 
-  {{cookiecutter.underscore_aws_module_name}}_name = {{ 'my-' + cookiecutter.lower_aws_module_name + '-name' }}
+  {{cookiecutter.underscore_aws_module_name}}_name = "{{ 'my-' + cookiecutter.lower_aws_module_name + '-name' }}"
 
   description = "{{ 'Testing ' + cookiecutter.title_aws_module_name +' module' }}"
 

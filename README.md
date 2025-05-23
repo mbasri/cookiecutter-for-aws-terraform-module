@@ -21,7 +21,7 @@ cookiecutter .
 
 ### Remote execution
 ```shell
-cookiecutter gl:mbasri/cookiecutter-for-aws-terraform-module
+cookiecutter gh:mbasri/cookiecutter-for-aws-terraform-module
 # You will be prompted for basic info (aws_module_name) which will be used in the template.
 # Keep default variable (lower_aws_module_name, title_aws_module_name, underscore_aws_module_name) value
 ```
