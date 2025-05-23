@@ -10,7 +10,7 @@ variable "description" {
 }
 
 variable "kms_arn" {
-  description = "{{ 'KMS ARN to be used to encryp ' + cookiecutter.title_aws_module_name }}"
+  description = "{{ 'KMS ARN to be used to encrypt ' + cookiecutter.title_aws_module_name }}"
   type        = string
   default     = null
 }
