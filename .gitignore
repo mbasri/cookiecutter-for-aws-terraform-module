@@ -1,3 +1,7 @@
+# MacOS files
+.DS_Store
+
+# Python bytecode
 *.py[cod]
 
 # C extensions
