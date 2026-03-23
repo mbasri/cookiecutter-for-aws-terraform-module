@@ -1,0 +1,17 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: write
+  models: read
+  security-events: write
+
+jobs:
+  release:
+    uses: mbasri-actions/reusable-workflows/.github/workflows/terraform-module-release.yml@main

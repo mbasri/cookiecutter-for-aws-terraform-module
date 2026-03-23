@@ -3,6 +3,6 @@
   "lower_aws_module_name": "{{ cookiecutter.aws_module_name.replace('_','-').replace(' ','-').lower() }}",
   "title_aws_module_name": "{{ cookiecutter.aws_module_name.replace('-',' ').replace('_',' ').title() }}",
   "underscore_aws_module_name": "{{ cookiecutter.aws_module_name.replace('-','_').replace(' ','_').lower() }}",
-  "_terraform_version": "1.12.2",
-  "_aws_provider_version": "6.4.0"
+  "_terraform_version": "1.14.3",
+  "_aws_provider_version": "6.27.0"
 }

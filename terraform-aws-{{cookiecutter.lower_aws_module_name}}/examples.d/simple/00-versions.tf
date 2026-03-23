@@ -6,6 +6,9 @@ terraform {
   required_version = "{{cookiecutter._terraform_version}}"
 
   required_providers {
-    aws = "{{cookiecutter._aws_provider_version}}"
+    aws = {
+      source  = "hashicorp/aws"
+      version = "{{cookiecutter._aws_provider_version}}"
+    }
   }
 }

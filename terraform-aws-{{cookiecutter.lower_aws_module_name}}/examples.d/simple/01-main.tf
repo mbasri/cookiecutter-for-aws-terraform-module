@@ -1,6 +1,5 @@
 provider "aws" {
-  profile = "lab"
-  region  = local.region
+  region = local.region
 }
 
 locals {
@@ -26,8 +25,8 @@ module "{{cookiecutter.lower_aws_module_name}}" {
     "billing:application"       = "test"
     "billing:environment"       = "dev"
 
-    "security:compliance"     = "HIPAA"
-    "security:data-sensitity" = "1"
-    "security:encryption"     = "false"
+    "security:compliance"        = "HIPAA"
+    "security:data-sensitivity"  = "1"
+    "security:encryption"        = "false"
   }
 }

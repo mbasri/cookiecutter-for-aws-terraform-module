@@ -2,8 +2,6 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://gitlab.com/mbasri-terraform/modules/aws/terraform-aws-{{cookiecutter.lower_aws_module_name}})
-
-## [v1.0.0](https://gitlab.com/mbasri-terraform/modules/aws/terraform-aws-{{cookiecutter.lower_aws_module_name}}/-/tree/v1.0.0) (07-01-2024)
+## [v1.0.0](https://github.com/mbasri-terraform-aws-modules/terraform-aws-{{cookiecutter.lower_aws_module_name}}/releases/tag/v1.0.0)
 
 - Initial commit
